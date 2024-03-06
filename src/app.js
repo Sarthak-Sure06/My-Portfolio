@@ -16,29 +16,29 @@ app.use(express.static(static_path));
 
 //routing path//
 // app.get(route,callback)
+app.get("/",(req,res)=>{
+    res.render("index");
+});
+
 app.get("/index",(req,res)=>{
     res.render("index");
 })
 
 app.get("/about",(req,res)=>{
     res.render('about');
-})
+});
 
 app.get("/projects",(req,res)=>{
     res.render('projects');
-})
-
-app.get("/certifications",(req,res)=>{
-    res.render('certifications');
-})
+});
 
 app.get("/contact",(req,res)=>{
     res.render('contact');
-})
+});
 
 app.get("*",(req,res)=>{
     res.send("404 error");
-})
+});
 
 app.listen(port, ()=>{
     console.log(8000);

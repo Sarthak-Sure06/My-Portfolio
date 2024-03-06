@@ -227,279 +227,195 @@ header .right-side-menu .sub-menu button:hover{
 
 /*----------------------  navbar style end -------------------------------------- */
 
+/*-------------------------------------- our section third start ------------------------------------------ */
 
-/*-------------------------------------------------- our main section start-----------------------------------------------------------------  */
-/*----------------------------------------------------- left side start ----------------------------------------------------------------------------------- */
-
-.main-section{
-    padding: 0 20rem;
+/* yeh pura screen value set karne ke liye */
+.section-third{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
+    padding: 3rem 15rem;
 }
 
-.main-section h2{
-
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 1rem;
-
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-}
-
-.main-section a button{
-    border-radius: 10px;
-    background-color: #FF725E;
-    color: white;
-    font-size: 25px;
-    padding: 0 1px;
-    width: 150px;
-    height: 50px;
-}
-
-.main-section a button:hover{
-    background-color: #B326F6;
-    color: #680994;
-    font-size: 25px;
-    font-style: italic;
-}
-
-.main-section .main-left-side{
-
-    width: 50%;
-    height: 40vh;
-    display: flex;
-    position: absolute;
-    top: 252px;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-
-}
-
-/* yeh sab ek line m karne ke liye */
-.main-section .main-left-side .single-line{
-    display: flex;
-    justify-content: space-between;
-}
-.main-section .main-left-side .hello {
-    display: inline;
-    margin: 0 5px;
-    margin-bottom: 0; /* Adjust the margin bottom */
-}
-
-/* yeh sab ek line m laane ke liye */
-.main-section .main-left-side .im,
-.main-section .main-left-side .sarthak {
-    display: inline;
-    margin: 0 5px;
-    margin-top: 0;
-    font-size: 45px;
-    
-}
-.main-section .main-left-side .im{
-    color: #680994;
-    font-weight: 600;
-    font-size: 43px;
-}
-.main-section .main-left-side .hello,.im{
-    color: #680994;
-    font-weight: 600;
-}
-
-/* yeh vo javascript wala part hai   */
-#element{
-
-    display: inline;
-    margin: 0 5px;
-    color:#680994;
-
-    background-color: #F0D1FF;
-    font-size: 35px;
-    font-family: 'Poppins' , sans-serif;
-
-}
-
-
-/*------------------------------------- left side end --------------------------------- */
-
-/*---------------------------------- right side start ----------------------------------- */
-
-.main-section .main-right-side{
-
-    width: 50%;
-    height: 656px;
-    background-color: var(--another-main-color);
-    position: absolute;
-    right: 0;
-    top: 80px;
-    border-radius: 200px 0 0 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.main-section .main-right-side img{
-    width: 292px;
-    height: 302px;
-    margin-left: 200px;
-}
-/* -----------------------------------------------right side end----------------------------------------------- */
-/*-------------------------------------------- our main section end --------------------------------------------*/
-
-
-
-/* ------------------------------------second main section start (Introduction wala)------------------------------------------------------ */
-.common-section{
-    background-color: var(--navbar-color);
-    width: 100%;
-    height: 518px;
-    display: grid;
-    grid-template-columns: 450px 871px; /*yeh grid dimensions deta hai  */
-    margin-bottom: 0;
-    margin-top: 656px;
-    padding: 0 20;
-}
-
-/* -----------------------------left side start --------------------------- */
-/* yeh left aur right waale ko grid m banane ke liye */
-
-.common-section .left-side{
-    width: inherit;
-    height: inherit;
-}
-
-/* yeh vo jo image ke piche waala part hai na vo  */
-.common-section .left-side figure{
-    width: 332px;
-    height: 518px;
-    border-radius: 0 200px 200px 0;
-    background-color: var(--another-main-color);
-}
-
-.common-section .left-side img{
-    width: 430px;
-    height: 430px;
-    margin-left: 52px;
-    margin-top: 20px;
-}
-/* -----------------------------left side end --------------------------- */
-
-
-/* -----------------------------right side start --------------------------- */
-
-/* yeh right side ka content ekdum start m lanne ke liye */
-.common-section .right-side{
-    width: inherit;
-    height: inherit;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* yeh my aur introduction ko ek line m laane ke liye */
-
-
-.common-section .right-side .single-line-section-2 .My{
-}
-
-.common-section .right-side .single-line-section-2 .Introduction{
-
-    color: var(--home-ka-color);
-
-}
-
-/* yeh h2 ko ek line m laane ke liye aur baaki sab cheeje */
-.common-section .right-side .single-line-section-2 h2{
-    display: inline;
-    width: 308px;
-    height: 70px;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 6.3rem;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-}
-
-/* yeh mere li ke andar waale content ke liye */
-.common-section .right-side li{
-    color: var(--home-ka-color);
-    width: 871px;
-    height: 50px;
-    margin-top: 10px;
+/* yeh project heading  ke liye */
+.section-third h2{
+    font-size: 50px;
     margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+
 }
 
-.common-section .right-side li span{
-    font-style: italic;
-    color: #B326F6;
-    font-weight: 600;
+/* yeh PROJECT ka color change krne ke liye */
+.section-third h2 span{
+    color: var(--home-ka-color);
 }
 
-/* Remove absolute positioning and adjust button alignment */
-.common-section .right-side .button-grp {
-    position: relative;
-    margin-left: auto; /* Align to the right end */
-    margin-bottom: 20px;
+/* yeh project ke neche waala paragraph ke liye */
+.section-third p{
+    width: 400px;
+    height: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    color: var(--main-color);
 }
 
-/* Adjust button styles */
-.common-section .right-side .button-grp .common-btn {
-    padding: 0.25px;
+
+/* me imp hai projects card ke liye pura screen ko 3section m batta hai  */
+.section-third .section-third-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+/* yeh humare heading waali image hai  */
+.section-third .section-third-task img{
     width: 100px;
-    height: 30px;
-    background-color: var(--button-background);
-    margin-left: 20px; /* Adjust left margin to create space between button and content */
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: lowercase;
-    font-style: "Poppins";
+    height: 100px;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    transition: all 0.3s;
+}
+
+/* yeh humare card ka content hai h3 and para */
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3,
+.section-third .section-third-task .task-4,
+.section-third .section-third-task .task-5,
+.section-third .section-third-task .task-6{
+    width: 380px;
+    height: 460px;
+    padding-top: 10px;
+    background-color: var(--another-main-color);
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 1.5px 10px var(--home-ka-color);
+}
+
+/* card ko bada karna hover ke time aur baaki cheeje */
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover,
+.section-third .section-third-task .task-4:hover,
+.section-third .section-third-task .task-5:hover,
+.section-third .section-third-task .task-6:hover{
+    box-shadow: 0 2px 20px 1px var(--home-ka-color);
+    width: 385px;
+    height: 465px;
+   /* background-color: var(--navbar-color);*/
+}
+
+/* card m headings ke liye */
+.section-third .section-third-task .task-1 h3,
+.section-third .section-third-task .task-2 h3,
+.section-third .section-third-task .task-3 h3,
+.section-third .section-third-task .task-4 h3,
+.section-third .section-third-task .task-5 h3,
+.section-third .section-third-task .task-6 h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: var(--home-ka-color);
     font-weight: 600;
 }
 
-.common-section .right-side .button-grp .common-btn:hover {
+/* cards me paragraph ke liye */
+.section-third .section-third-task .task-1 p,
+.section-third .section-third-task .task-2 p,
+.section-third .section-third-task .task-3 p,
+.section-third .section-third-task .task-4 p,
+.section-third .section-third-task .task-5 p,
+.section-third .section-third-task .task-6 p{
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 10px ;
+    color: var(--home-ka-color);
+
+}
+
+/* card m button ke div ke liye */
+.section-third .section-third-task .task-1 .button-class,
+.section-third .section-third-task .task-2 .button-class,
+.section-third .section-third-task .task-3 .button-class,
+.section-third .section-third-task .task-4 .button-class,
+.section-third .section-third-task .task-5 .button-class,
+.section-third .section-third-task .task-6 .button-class{
+    position: relative;
+    top: 132px;
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0 60px;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class button,
+.section-third .section-third-task .task-2 .button-class button,
+.section-third .section-third-task .task-3 .button-class button,
+.section-third .section-third-task .task-4 .button-class button,
+.section-third .section-third-task .task-5 .button-class button,
+.section-third .section-third-task .task-6 .button-class button{
+    width: 127px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-background);
+    color: white;
+    font-weight: 600;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class button span,
+.section-third .section-third-task .task-2 .button-class button span,
+.section-third .section-third-task .task-3 .button-class button span,
+.section-third .section-third-task .task-4 .button-class button span,
+.section-third .section-third-task .task-5 .button-class button span,
+.section-third .section-third-task .task-6 .button-class button span{
+
+    padding: 5px;
+
+}
+
+/* yeh button ke hover ke liye */
+.section-third .section-third-task .task-1 .button-class button:hover,
+.section-third .section-third-task .task-2 .button-class button:hover,
+.section-third .section-third-task .task-3 .button-class button:hover,
+.section-third .section-third-task .task-4 .button-class button:hover,
+.section-third .section-third-task .task-5 .button-class button:hover,
+.section-third .section-third-task .task-6 .button-class button:hover{
     background-color: #B326F6;
     color: #680994;
     font-style: italic;
 }
 
-/* -----------------------------right side end --------------------------- */
-
-/*------------------------------------- second main section end (Introduction wala)------------------------------------------------------- */
 
 
-/* -----------------------------------------------quote section start ------------------------------------------------------ */
-.quote{
-   /* position: relative;*/
-   margin-top: 45px;
-   margin-bottom: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-third .section-third-task .task-1:hover > img,
+.section-third .section-third-task .task-2:hover > img,
+.section-third .section-third-task .task-3:hover > img,
+.section-third .section-third-task .task-4:hover > img,
+.section-third .section-third-task .task-5:hover > img,
+.section-third .section-third-task .task-6:hover > img{
+    margin-top: 10px;
+    transform: rotate(360deg);
+    transition: 0.8s;
 }
 
-.quote h3{
-    font-size: 25px;
-    font-weight: 600;
-}
-/*------------------------------------------------------- quote section end  --------------------------------------------*/
+/* our section third end  */
 
 
 /*----------------------------------------------------------- footer section start -------------------------------------------------------------- */
@@ -528,13 +444,13 @@ footer{
 }
 
 /* yeh footer ki height ke liye */
-footer .copyright, footer .footer-menu{
+footer .copyright,.footer-menu{
     margin-top: 10px;
     margin-bottom: 5px;
     color: var(--home-ka-color);
 }
 
-footer .copyright h3,footer .footer-menu h3{
+footer .copyright h3,.footer-menu h3{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 0;

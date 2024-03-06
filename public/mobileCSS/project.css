@@ -1,0 +1,372 @@
+ /*Resposive start  */
+
+
+ @media screen and (max-width:770px) {
+
+    
+    html{
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        --main-color : #B326F6;
+        --primary-color : #ffffff;
+        --button-background : #FF725E;
+        --background-color : #F0D1FF;
+        --another-main-color: rgba(191,59,254,0.37);
+        --navbar-color: rgba(229,173 , 255,0.4);
+        --home-ka-color:#680994;
+        background-color: var(--background-color);
+        overflow-x: hidden;
+    }
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+        header{
+            position: relative;
+        }
+        header, .main-section,.common-section{
+            padding: 0 5rem;
+        }
+    
+       /* header nav{
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+    
+        header nav .left-side-menu{
+            width: 100%;
+            display: block;
+            order: 2;
+        }*/
+    
+        /* mere logo k color  */
+        header .logo{
+        display: block;
+        width: 100%;
+        z-index: 1000;
+       }
+    
+    
+       /* mobile navigation  */
+       .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        order: 1;
+       /* border: 2px solid var(--home-ka-color);*/
+        padding: 0;
+       }
+    
+       .mobile-navbar-btn .icon-open{
+        width: 50px;
+       }
+    
+       /* yeh pure navbar ko page cover up krne ke liye  */
+       .navbar{
+        /* display: none; */
+        width: 100%;
+        height: 47vh;
+        background-color: var(--main-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* transition ke liye  */
+       transform: translateX(100%);
+       transition: all 0.25s linear;
+    
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       
+       }
+    
+       .navbar .left-side-menu{
+        position: fixed; /* Change to fixed positioning */
+        top: 0;
+        bottom: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1002;
+    }
+    
+    .navbar .right-side-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: auto; /* Adjust as needed */
+        display: flex;
+        flex-direction: row; /* Adjust as needed */
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+    
+       .navbar .left-side-menu .sub-menu {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+       }
+
+       /* logo aur home aur about.. m space ke leye  */
+header nav .left-side-menu .sub-menu a{
+    cursor: pointer;
+}
+
+header nav .left-side-menu .sub-menu a li{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+header nav .left-side-menu .sub-menu a li:hover{
+
+    color: var(--home-ka-color);
+
+}
+       .navbar .right-side-menu .sub-menu{
+        position: relative;
+        top: 120px;
+    
+       }
+    
+       /* link ko shi tarike dur karne ke leye */
+    header .right-side-menu .sub-menu a{
+        margin-right: 5px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 2rem;
+    }
+    
+       .navbar .right-side-menu .sub-menu button{
+       
+        background-color: white;
+        /*display:block;*/
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+       }
+    
+       .navbar .right-side-menu .sub-menu button i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+       }
+    
+       .active .mobile-navbar-btn .icon-close{
+        display: block;
+        width: 40px;
+       }
+       .active .mobile-navbar-btn .icon-open{
+        width: 40px;
+        display: none;
+       }
+
+       /* navbar end  */
+
+
+       /*-------------- third section start-----------  */
+
+       .section-third{
+        height: auto;
+        width: 100%;
+        padding: 0 5rem;
+        margin-bottom: 50px;
+        text-align: center;
+       }
+
+       .section-third h2{
+        height: auto;
+        font-size: 35px;
+        line-height: 6rem;
+        padding-top: 50px;
+       }
+
+       /* yeh project ke neche waala paragraph ke liye */
+.section-third p{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+   
+    margin-bottom: 3rem;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+      
+       
+    .section-third .section-third-task{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust grid layout for responsiveness */
+        gap: 2rem;;
+        column-gap: 4rem;
+        padding: 0;
+        margin: 0;
+       }
+
+       /* yeh humare card ka content hai h3 and para */
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3,
+.section-third .section-third-task .task-4,
+.section-third .section-third-task .task-5,
+.section-third .section-third-task .task-6{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-color: var(--another-main-color);
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: none;
+}
+/* card m headings ke liye */
+.section-third .section-third-task .task-1 h3,
+.section-third .section-third-task .task-2 h3,
+.section-third .section-third-task .task-3 h3,
+.section-third .section-third-task .task-4 h3,
+.section-third .section-third-task .task-5 h3,
+.section-third .section-third-task .task-6 h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 0;
+    color: var(--home-ka-color);
+    font-weight: 600;
+}
+
+/* cards me paragraph ke liye */
+.section-third .section-third-task .task-1 p,
+.section-third .section-third-task .task-2 p,
+.section-third .section-third-task .task-3 p,
+.section-third .section-third-task .task-4 p,
+.section-third .section-third-task .task-5 p,
+.section-third .section-third-task .task-6 p{
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: var(--home-ka-color);
+
+}
+
+/* card m button ke div ke liye */
+.section-third .section-third-task .task-1 .button-class,
+.section-third .section-third-task .task-2 .button-class,
+.section-third .section-third-task .task-3 .button-class,
+.section-third .section-third-task .task-4 .button-class,
+.section-third .section-third-task .task-5 .button-class,
+.section-third .section-third-task .task-6 .button-class{
+    position: relative;
+    top: 4%;
+    right: 15%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    padding: 0 30%;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class button,
+.section-third .section-third-task .task-2 .button-class button,
+.section-third .section-third-task .task-3 .button-class button,
+.section-third .section-third-task .task-4 .button-class button,
+.section-third .section-third-task .task-5 .button-class button,
+.section-third .section-third-task .task-6 .button-class button{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-background);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* card ko bada karna hover ke time aur baaki cheeje */
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover,
+.section-third .section-third-task .task-4:hover,
+.section-third .section-third-task .task-5:hover,
+.section-third .section-third-task .task-6:hover{
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+   /* background-color: var(--navbar-color);*/
+}
+
+
+       .section-third .section-third-task .task-1:hover > img,
+.section-third .section-third-task .task-2:hover > img,
+.section-third .section-third-task .task-3:hover > img,
+.section-third .section-third-task .task-4:hover > img,
+.section-third .section-third-task .task-5:hover > img,
+.section-third .section-third-task .task-6:hover > img{
+    margin-top: 10px;
+    transform: none;
+    transition: 0.8s;
+}
+
+       /*----------------- third section end ------------- */
+
+              /* footer start  */
+    
+              footer{
+                width: 100%;
+                height: auto;
+                padding: 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               }
+            
+               footer .copyright, footer .footer-menu{
+                margin-top: 0;
+                margin-bottom: 0;
+               }
+            
+               footer .right-side-menu .sub-menu{
+                margin-top: 1px;
+                justify-content: center;
+               }
+            
+               footer .right-side-menu .sub-menu a{
+                padding: 0;
+                margin-bottom: 5px;
+               }
+            
+               footer .copyright h3,footer .footer-menu h3{
+                font-size: 16px;
+               }
+            
+               /* footer end  */
+}

@@ -132,7 +132,7 @@ header nav .left-side-menu a img{
 header nav .left-side-menu .sub-menu{
     height: inherit;
     display: flex;
-    margin-left: 180px;
+    margin-left: 280px;
     align-items: center;
     justify-content: end;
 }
@@ -144,7 +144,7 @@ header nav .left-side-menu .sub-menu a{
 
 /* saari navbar ki cheeje ek line m laane ke leye  */
 header nav .left-side-menu .sub-menu a li{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color:#680994;
     line-height: 3.6rem;

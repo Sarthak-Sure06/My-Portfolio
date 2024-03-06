@@ -232,13 +232,13 @@ header .right-side-menu .sub-menu button:hover{
 /*----------------------------------------------------- left side start ----------------------------------------------------------------------------------- */
 
 .main-section{
-    padding: 0 20rem;
+    padding: 0 16rem;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 0rem;
 }
 
 .main-section h2{
@@ -247,28 +247,11 @@ header .right-side-menu .sub-menu button:hover{
     font-style: normal;
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 
     display: flex;
     align-items: center;
     text-transform: capitalize;
-}
-
-.main-section a button{
-    border-radius: 10px;
-    background-color: #FF725E;
-    color: white;
-    font-size: 25px;
-    padding: 0 1px;
-    width: 150px;
-    height: 50px;
-}
-
-.main-section a button:hover{
-    background-color: #B326F6;
-    color: #680994;
-    font-size: 25px;
-    font-style: italic;
 }
 
 .main-section .main-left-side{
@@ -277,20 +260,14 @@ header .right-side-menu .sub-menu button:hover{
     height: 40vh;
     display: flex;
     position: absolute;
-    top: 252px;
+    top: 20%;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
 
 }
 
-/* yeh sab ek line m karne ke liye */
-.main-section .main-left-side .single-line{
-    display: flex;
-    justify-content: space-between;
-}
 .main-section .main-left-side .hello {
-    display: inline;
     margin: 0 5px;
     margin-bottom: 0; /* Adjust the margin bottom */
 }
@@ -298,10 +275,10 @@ header .right-side-menu .sub-menu button:hover{
 /* yeh sab ek line m laane ke liye */
 .main-section .main-left-side .im,
 .main-section .main-left-side .sarthak {
-    display: inline;
     margin: 0 5px;
     margin-top: 0;
-    font-size: 45px;
+    font-size: 25px;
+    text-transform: lowercase;
     
 }
 .main-section .main-left-side .im{
@@ -314,20 +291,6 @@ header .right-side-menu .sub-menu button:hover{
     font-weight: 600;
 }
 
-/* yeh vo javascript wala part hai   */
-#element{
-
-    display: inline;
-    margin: 0 5px;
-    color:#680994;
-
-    background-color: #F0D1FF;
-    font-size: 35px;
-    font-family: 'Poppins' , sans-serif;
-
-}
-
-
 /*------------------------------------- left side end --------------------------------- */
 
 /*---------------------------------- right side start ----------------------------------- */
@@ -336,11 +299,9 @@ header .right-side-menu .sub-menu button:hover{
 
     width: 50%;
     height: 656px;
-    background-color: var(--another-main-color);
     position: absolute;
-    right: 0;
-    top: 80px;
-    border-radius: 200px 0 0 200px;
+    right: 5%;
+    top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -348,158 +309,15 @@ header .right-side-menu .sub-menu button:hover{
 }
 
 .main-section .main-right-side img{
-    width: 292px;
-    height: 302px;
-    margin-left: 200px;
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 /* -----------------------------------------------right side end----------------------------------------------- */
 /*-------------------------------------------- our main section end --------------------------------------------*/
 
 
-
-/* ------------------------------------second main section start (Introduction wala)------------------------------------------------------ */
-.common-section{
-    background-color: var(--navbar-color);
-    width: 100%;
-    height: 518px;
-    display: grid;
-    grid-template-columns: 450px 871px; /*yeh grid dimensions deta hai  */
-    margin-bottom: 0;
-    margin-top: 656px;
-    padding: 0 20;
-}
-
-/* -----------------------------left side start --------------------------- */
-/* yeh left aur right waale ko grid m banane ke liye */
-
-.common-section .left-side{
-    width: inherit;
-    height: inherit;
-}
-
-/* yeh vo jo image ke piche waala part hai na vo  */
-.common-section .left-side figure{
-    width: 332px;
-    height: 518px;
-    border-radius: 0 200px 200px 0;
-    background-color: var(--another-main-color);
-}
-
-.common-section .left-side img{
-    width: 430px;
-    height: 430px;
-    margin-left: 52px;
-    margin-top: 20px;
-}
-/* -----------------------------left side end --------------------------- */
-
-
-/* -----------------------------right side start --------------------------- */
-
-/* yeh right side ka content ekdum start m lanne ke liye */
-.common-section .right-side{
-    width: inherit;
-    height: inherit;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* yeh my aur introduction ko ek line m laane ke liye */
-
-
-.common-section .right-side .single-line-section-2 .My{
-}
-
-.common-section .right-side .single-line-section-2 .Introduction{
-
-    color: var(--home-ka-color);
-
-}
-
-/* yeh h2 ko ek line m laane ke liye aur baaki sab cheeje */
-.common-section .right-side .single-line-section-2 h2{
-    display: inline;
-    width: 308px;
-    height: 70px;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 6.3rem;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-}
-
-/* yeh mere li ke andar waale content ke liye */
-.common-section .right-side li{
-    color: var(--home-ka-color);
-    width: 871px;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.common-section .right-side li span{
-    font-style: italic;
-    color: #B326F6;
-    font-weight: 600;
-}
-
-/* Remove absolute positioning and adjust button alignment */
-.common-section .right-side .button-grp {
-    position: relative;
-    margin-left: auto; /* Align to the right end */
-    margin-bottom: 20px;
-}
-
-/* Adjust button styles */
-.common-section .right-side .button-grp .common-btn {
-    padding: 0.25px;
-    width: 100px;
-    height: 30px;
-    background-color: var(--button-background);
-    margin-left: 20px; /* Adjust left margin to create space between button and content */
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: lowercase;
-    font-style: "Poppins";
-    font-weight: 600;
-}
-
-.common-section .right-side .button-grp .common-btn:hover {
-    background-color: #B326F6;
-    color: #680994;
-    font-style: italic;
-}
-
-/* -----------------------------right side end --------------------------- */
-
-/*------------------------------------- second main section end (Introduction wala)------------------------------------------------------- */
-
-
-/* -----------------------------------------------quote section start ------------------------------------------------------ */
-.quote{
-   /* position: relative;*/
-   margin-top: 45px;
-   margin-bottom: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote h3{
-    font-size: 25px;
-    font-weight: 600;
-}
-/*------------------------------------------------------- quote section end  --------------------------------------------*/
 
 
 /*----------------------------------------------------------- footer section start -------------------------------------------------------------- */
@@ -525,6 +343,9 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 /* yeh footer ki height ke liye */
