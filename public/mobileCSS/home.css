@@ -1,0 +1,360 @@
+/* Resposive start  */
+
+
+@media screen and (max-width:770px) {
+
+    
+    html{
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        --main-color : #B326F6;
+        --primary-color : #ffffff;
+        --button-background : #FF725E;
+        --background-color : #F0D1FF;
+        --another-main-color: rgba(191,59,254,0.37);
+        --navbar-color: rgba(229,173 , 255,0.4);
+        --home-ka-color:#680994;
+        background-color: var(--background-color);
+        overflow-x: hidden;
+    }
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+        header{
+            position: relative;
+        }
+        header, .main-section,.common-section{
+            padding: 0 5rem;
+        }
+    
+       /* header nav{
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+    
+        header nav .left-side-menu{
+            width: 100%;
+            display: block;
+            order: 2;
+        }*/
+    
+        /* mere logo k color  */
+        header .logo{
+        display: block;
+        width: 100%;
+        z-index: 1000;
+       }
+    
+    
+       /* mobile navigation  */
+       .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        order: 1;
+       /* border: 2px solid var(--home-ka-color);*/
+        padding: 0;
+       }
+    
+       .mobile-navbar-btn .icon-open{
+        width: 50px;
+       }
+    
+       /* yeh pure navbar ko page cover up krne ke liye  */
+       .navbar{
+        /* display: none; */
+        width: 100%;
+        height: 47vh;
+        background-color: var(--main-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* transition ke liye  */
+       transform: translateX(100%);
+       transition: all 0.25s linear;
+    
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       
+       }
+    
+       .navbar .left-side-menu{
+        position: fixed; /* Change to fixed positioning */
+        top: 0;
+        bottom: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1002;
+    }
+    
+    .navbar .right-side-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: auto; /* Adjust as needed */
+        display: flex;
+        flex-direction: row; /* Adjust as needed */
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+    
+       .navbar .left-side-menu .sub-menu {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+       }
+
+       /* logo aur home aur about.. m space ke leye  */
+header nav .left-side-menu .sub-menu a{
+    cursor: pointer;
+}
+header nav .left-side-menu .sub-menu a li:hover{
+
+    color: var(--home-ka-color);
+
+}
+       .navbar .right-side-menu .sub-menu{
+        position: relative;
+        top: 120px;
+    
+       }
+    
+       /* link ko shi tarike dur karne ke leye */
+    header .right-side-menu .sub-menu a{
+        margin-right: 5px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 2rem;
+    }
+    
+       .navbar .right-side-menu .sub-menu button{
+       
+        background-color: white;
+        /*display:block;*/
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+       }
+    
+       .navbar .right-side-menu .sub-menu button i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+       }
+    
+       .active .mobile-navbar-btn .icon-close{
+        display: block;
+        width: 40px;
+       }
+       .active .mobile-navbar-btn .icon-open{
+        width: 40px;
+        display: none;
+       }
+      
+       /*---------------------------main section ------------------ */
+    
+       .main-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 10rem;
+       }
+    
+       .main-section .main-left-side{
+        order: 1;
+        width: 100%;
+        margin-left: 50px;
+       }
+       .main-section .main-left-side .hello{
+        font-size: 40px;
+        line-height: 6rem;
+        margin-bottom: 20px;
+       }
+       .main-section .main-left-side .im,
+    .main-section .main-left-side .sarthak{
+        font-size: 40px;
+        line-height: 4rem;
+        margin-bottom: 40px;
+    }
+    
+    /* yeh vo javascript wala part hai   */
+    #element{
+    
+       font-size: 25px;
+       margin-bottom: 50px;
+    
+    }
+    
+    .main-section a button{
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    
+    /* -----right side  ---------*/
+       .main-section .main-right-side{
+        order: 2;
+        width: 120%;
+        height: 10%;
+        background-color: var(--another-main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 450px;
+        margin-bottom: 0;
+        border-radius: 20px;
+       }
+    
+       .main-section .main-right-side img{
+        width: 250px;
+        height: 260px;
+        margin: 0;
+        margin-top: 0;
+        margin-right: 4rem;
+       }
+    
+       /* main section end  */
+    
+       /*--------------------------------- common section start ------------------------------ */
+    
+       /* left side  */
+       .common-section{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+        padding: 0 5rem;
+       }
+    
+       .common-section .left-side figure{
+        height:100%;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 0;
+        top: 0;
+       }
+    
+       .common-section .left-side figure img{
+        width: 250px;
+        height: 260px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+       }
+    
+       /*--------------- right side---------------  */
+    
+       .common-section .right-side{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+       }
+    
+       .common-section .right-side .single-line-section-2 h2{
+        font-size: 33px;
+       }
+    
+       /* yeh mere li ke andar waale content ke liye */
+    .common-section .right-side li{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10%;
+        font-size: 16px;
+    }
+    
+    .common-section .right-side .button-grp {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px; /* Add margin to separate button from the list */
+    }
+    
+    .common-section .right-side .button-grp .common-btn {
+        padding: 0.25px;
+        width: 100px;
+        height: 30px;
+        background-color: var(--button-background);
+        margin-right: 20px;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        text-transform: lowercase;
+        font-style: "Poppins";
+        font-weight: 600;
+    }
+       /*--------------------------------- common section end ------------------------------ */
+        
+    
+       /* footer start  */
+    
+       footer{
+        width: 100%;
+        height: auto;
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       footer .copyright, footer .footer-menu{
+        margin-top: 0;
+        margin-bottom: 0;
+       }
+    
+       footer .right-side-menu .sub-menu{
+        margin-top: 1px;
+        justify-content: center;
+       }
+    
+       footer .right-side-menu .sub-menu a{
+        padding: 0;
+        margin-bottom: 5px;
+       }
+    
+       footer .copyright h3,footer .footer-menu h3{
+        font-size: 16px;
+       }
+    
+       /* footer end  */
+    }
