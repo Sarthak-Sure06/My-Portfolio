@@ -1,5 +1,35 @@
 /* Resposive start  */
 
+@media screen and (max-width:1367px) {
+
+    html{
+        /* overflow-x: hidden;*/
+         height: 100%;
+         width: 100%;
+     }
+     body{
+         --main-color : #B326F6;
+         --primary-color : #ffffff;
+         --button-background : #FF725E;
+         --background-color : #F0D1FF;
+         --another-main-color: rgba(191,59,254,0.37);
+         --navbar-color: rgba(229,173 , 255,0.4);
+         --home-ka-color:#680994;
+         background-color: var(--background-color);
+         /*overflow-x: hidden;*/
+     }
+ 
+     a{
+         text-decoration: none;
+         cursor: pointer;
+     }
+ 
+     header, .main-section{
+         padding: 0 6rem;
+     }
+
+ }
+
 
 @media screen and (max-width:770px) {
 

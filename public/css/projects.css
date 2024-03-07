@@ -331,7 +331,7 @@ header .right-side-menu .sub-menu button:hover{
 .section-third .section-third-task .task-4 p,
 .section-third .section-third-task .task-5 p,
 .section-third .section-third-task .task-6 p{
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
     width: 100%;
     display: flex;
@@ -376,6 +376,18 @@ header .right-side-menu .sub-menu button:hover{
     background-color: var(--button-background);
     color: white;
     font-weight: 600;
+}
+
+/* yeh button ke liye */
+.section-third .section-third-task .task-1 .button-class .button-2,
+.section-third .section-third-task .task-2 .button-class .button-2,
+.section-third .section-third-task .task-3 .button-class .button-2,
+.section-third .section-third-task .task-4 .button-class .button-2,
+.section-third .section-third-task .task-5 .button-class .button-2,
+.section-third .section-third-task .task-6 .button-class .button-2{
+
+    background-color: #137AC9;
+
 }
 
 /* yeh button ke liye */

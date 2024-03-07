@@ -1,4 +1,206 @@
  /*Resposive start  */
+ @media screen and (max-width:1367px) {
+
+    html{
+        /* overflow-x: hidden;*/
+         height: 100%;
+         width: 100%;
+     }
+     body{
+         --main-color : #B326F6;
+         --primary-color : #ffffff;
+         --button-background : #FF725E;
+         --background-color : #F0D1FF;
+         --another-main-color: rgba(191,59,254,0.37);
+         --navbar-color: rgba(229,173 , 255,0.4);
+         --home-ka-color:#680994;
+         background-color: var(--background-color);
+         /*overflow-x: hidden;*/
+     }
+ 
+     a{
+         text-decoration: none;
+         cursor: pointer;
+     }
+ 
+     header, .main-section{
+         padding: 0 6rem;
+     }
+
+     /* yeh pura screen value set karne ke liye */
+.section-third{
+    padding: 3rem 9rem;
+}
+
+ }
+
+
+@media screen and (max-width:1280px) {
+
+       
+    html{
+        /* overflow-x: hidden;*/
+         height: 100%;
+         width: 100%;
+     }
+     body{
+         --main-color : #B326F6;
+         --primary-color : #ffffff;
+         --button-background : #FF725E;
+         --background-color : #F0D1FF;
+         --another-main-color: rgba(191,59,254,0.37);
+         --navbar-color: rgba(229,173 , 255,0.4);
+         --home-ka-color:#680994;
+         background-color: var(--background-color);
+         /*overflow-x: hidden;*/
+     }
+ 
+     a{
+         text-decoration: none;
+         cursor: pointer;
+     }
+ 
+     header, .main-section{
+         padding: 0 6rem;
+     }
+
+     /* yeh pura screen value set karne ke liye */
+.section-third{
+    padding: 3rem 10rem;
+}
+
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3,
+.section-third .section-third-task .task-4,
+.section-third .section-third-task .task-5,
+.section-third .section-third-task .task-6{
+    width: 340px;
+    height: 460px;
+    padding-top: 10px;
+    background-color: var(--another-main-color);
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 1.5px 10px var(--home-ka-color);
+}
+
+/* card ko bada karna hover ke time aur baaki cheeje */
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover,
+.section-third .section-third-task .task-4:hover,
+.section-third .section-third-task .task-5:hover,
+.section-third .section-third-task .task-6:hover{
+    box-shadow: 0 2px 20px 1px var(--home-ka-color);
+    width: 350px;
+    height: 465px;
+   /* background-color: var(--navbar-color);*/
+}
+
+/* card m button ke div ke liye */
+.section-third .section-third-task .task-1 .button-class,
+.section-third .section-third-task .task-2 .button-class,
+.section-third .section-third-task .task-3 .button-class,
+.section-third .section-third-task .task-4 .button-class,
+.section-third .section-third-task .task-5 .button-class,
+.section-third .section-third-task .task-6 .button-class{
+    position: relative;
+    top: 132px;
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0 40px;
+}
+ 
+    
+}
+
+
+ @media screen and (max-width:1280px) {
+
+       
+    html{
+        /* overflow-x: hidden;*/
+         height: 100%;
+         width: 100%;
+     }
+     body{
+         --main-color : #B326F6;
+         --primary-color : #ffffff;
+         --button-background : #FF725E;
+         --background-color : #F0D1FF;
+         --another-main-color: rgba(191,59,254,0.37);
+         --navbar-color: rgba(229,173 , 255,0.4);
+         --home-ka-color:#680994;
+         background-color: var(--background-color);
+         /*overflow-x: hidden;*/
+     }
+ 
+     a{
+         text-decoration: none;
+         cursor: pointer;
+     }
+ 
+     header, .main-section{
+         padding: 0 6rem;
+     }
+
+     /* yeh pura screen value set karne ke liye */
+.section-third{
+    padding: 3rem 10rem;
+}
+
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3,
+.section-third .section-third-task .task-4,
+.section-third .section-third-task .task-5,
+.section-third .section-third-task .task-6{
+    width: 340px;
+    height: 460px;
+    padding-top: 10px;
+    background-color: var(--another-main-color);
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 1.5px 10px var(--home-ka-color);
+}
+
+/* card ko bada karna hover ke time aur baaki cheeje */
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover,
+.section-third .section-third-task .task-4:hover,
+.section-third .section-third-task .task-5:hover,
+.section-third .section-third-task .task-6:hover{
+    box-shadow: 0 2px 20px 1px var(--home-ka-color);
+    width: 350px;
+    height: 465px;
+   /* background-color: var(--navbar-color);*/
+}
+
+/* card m button ke div ke liye */
+.section-third .section-third-task .task-1 .button-class,
+.section-third .section-third-task .task-2 .button-class,
+.section-third .section-third-task .task-3 .button-class,
+.section-third .section-third-task .task-4 .button-class,
+.section-third .section-third-task .task-5 .button-class,
+.section-third .section-third-task .task-6 .button-class{
+    position: relative;
+    top: 132px;
+    align-items: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0 40px;
+}
+ 
+    
+}
 
 
  @media screen and (max-width:770px) {
